@@ -1,0 +1,2093 @@
+{
+	"info": {
+		"_postman_id": "f40200ff-f1fe-4d3a-86c4-1fe8b27ccfe8",
+		"name": "FolderLearn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32517254"
+	},
+	"item": [
+		{
+			"name": "Google Maps API",
+			"item": [
+				{
+					"name": "Add place",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"location\": {\r\n    \"lat\": -38.383494,\r\n    \"lng\": 33.427362\r\n  },\r\n  \"accuracy\": 50,\r\n  \"name\": \"Frontline house\",\r\n  \"phone_number\": \"(+91) 983 893 3937\",\r\n  \"address\": \"29, side layout, cohen 09\",\r\n  \"types\": [\r\n    \"shoe park\",\r\n    \"shop\"\r\n  ],\r\n  \"website\": \"http://google.com\",\r\n  \"language\": \"French-IN\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123",
+							"protocol": "https",
+							"host": [
+								"rahulshettyacademy",
+								"com"
+							],
+							"path": [
+								"maps",
+								"api",
+								"place",
+								"add",
+								"json"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "qaclick123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get place",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=14c8d5a5b175b60cb721d4cdca52b8c8",
+							"protocol": "https",
+							"host": [
+								"rahulshettyacademy",
+								"com"
+							],
+							"path": [
+								"maps",
+								"api",
+								"place",
+								"get",
+								"json"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "qaclick123"
+								},
+								{
+									"key": "place_id",
+									"value": "14c8d5a5b175b60cb721d4cdca52b8c8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get place Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"place_id\":\"14c8d5a5b175b60cb721d4cdca52b8c8\",\r\n  \"address\":\"70 Summer walk, USA\",\r\n  \"key\":\"qaclick123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123",
+							"protocol": "https",
+							"host": [
+								"rahulshettyacademy",
+								"com"
+							],
+							"path": [
+								"maps",
+								"api",
+								"place",
+								"update",
+								"json"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "qaclick123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get place Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=14c8d5a5b175b60cb721d4cdca52b8c8",
+							"protocol": "https",
+							"host": [
+								"rahulshettyacademy",
+								"com"
+							],
+							"path": [
+								"maps",
+								"api",
+								"place",
+								"get",
+								"json"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "qaclick123"
+								},
+								{
+									"key": "place_id",
+									"value": "14c8d5a5b175b60cb721d4cdca52b8c8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "idk what is that",
+			"item": [
+				{
+					"name": "User list (no auth)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserList",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "65afedaa4e1023723654c3ea",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pagination",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "65afedaa4e1023723654c3ea",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user?page=1&limit=50",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create USER",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "65afedaa4e1023723654c3ea",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\"firstName\": \"Alex\",\r\n\"lastName\": \"QA\",\r\n\"email\": \"postmantestin@gyopmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user/create",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "65afedaa4e1023723654c3ea",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\"firstName\": \"AlexTEST\",\r\n\"lastName\": \"QATEST\",\r\n\"phone\": 12213521\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user/65aff938f326683719974b88",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user",
+								"65aff938f326683719974b88"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CheckUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "65afedaa4e1023723654c3ea",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user/65aff938f326683719974b88",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user",
+								"65aff938f326683719974b88"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Post",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "65afedaa4e1023723654c3ea",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"text\": \"textps\",\r\n\"image\": \"https://randomuser.me/api/portraits/med/men/31.jpg\",\r\n\"likes\": \"1000\",\r\n\"tags\": \"QA\",\r\n\"owner\": \"65aff938f326683719974b88\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/post/create",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"post",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "65afedaa4e1023723654c3ea",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"text\": \"textps\",\r\n\"image\": \"https://randomuser.me/api/portraits/med/men/31.jpg\",\r\n\"likes\": \"1000\",\r\n\"tags\": \"QA\",\r\n\"owner\": \"65aff938f326683719974b88\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user/65aff938f326683719974b88/post",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user",
+								"65aff938f326683719974b88",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Post List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "65afedaa4e1023723654c3ea",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/post",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creatte Comment",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "65afedaa4e1023723654c3ea",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"message\": \"SUP OG HECTORIUS\",\r\n\"owner\": \"65aff938f326683719974b88\",\r\n\"post\": \"65b00c6ff32668709a9750ed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/comment/create",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"comment",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Comment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "65afedaa4e1023723654c3ea",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user/65aff938f326683719974b88/comment",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user",
+								"65aff938f326683719974b88",
+								"comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete commet",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "65afedaa4e1023723654c3ea",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/comment/65b00c97f32668212b9750fe",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"comment",
+								"65b00c97f32668212b9750fe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Comment after delete",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "65afedaa4e1023723654c3ea",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user/65aff938f326683719974b88/comment",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user",
+								"65aff938f326683719974b88",
+								"comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "65afedaa4e1023723654c3ea",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "app-id",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user/65aff938f326683719974b88",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user",
+								"65aff938f326683719974b88"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JSONPlaceholder",
+			"item": [
+				{
+					"name": "Gett phots",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{Domain}}/photos",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAlbum",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{Domain}}/albums",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POSTAlbums",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{Domain}}/albums",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POSTphots",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{Domain}}/photos",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCHalbums",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 1,\r\n    \"id\": 1,\r\n    \"title\": \"somechage\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Domain}}/albums/1",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"albums",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCPhotos",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Domain}}/photos/1",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"photos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "all pet postman",
+			"item": [
+				{
+					"name": "Create pet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"Turka\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}'",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Pet",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/1",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update pet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"category\": {\r\n    \"id\": 1,\r\n    \"name\": \"Turkaupdate\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}'",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Pet after update",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/1",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create place an order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"petId\": 1,\r\n  \"quantity\": 0,\r\n  \"shipDate\": \"2024-01-24T09:57:19.577Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/store/order",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"store",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find place an order by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/store/order/1",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"store",
+								"order",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create second pet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,\r\n  \"category\": {\r\n    \"id\": 2,\r\n    \"name\": \"BIgG\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}'",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Second Pet",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/2",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update second pet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,\r\n  \"category\": {\r\n    \"id\": 2,\r\n    \"name\": \"BigGupdate\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}'",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check Pet after update second pet",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/2",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crate super pet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 3,\r\n  \"category\": {\r\n    \"id\": 3,\r\n    \"name\": \"super\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}'",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CheckSuperPet",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/3",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update super pet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 3,\r\n  \"category\": {\r\n    \"id\": 3,\r\n    \"name\": \"Superupdate\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}'",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "chek super pet after update",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/3",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crate last pet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 4,\r\n  \"category\": {\r\n    \"id\": 4,\r\n    \"name\": \"lastPet\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}'",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check last pet",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/4",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update last pet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 4,\r\n  \"category\": {\r\n    \"id\": 4,\r\n    \"name\": \"LastPetUPDATE\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}'",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check last pet after update",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/4",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create place an orderSECONDPET",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,\r\n  \"petId\": 2,\r\n  \"quantity\": 0,\r\n  \"shipDate\": \"2024-01-24T09:57:19.577Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/store/order",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"store",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create place an order3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 3,\r\n  \"petId\": 3,\r\n  \"quantity\": 0,\r\n  \"shipDate\": \"2024-01-24T09:57:19.577Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/store/order",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"store",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create place an order4",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 4,\r\n  \"petId\": 4,\r\n  \"quantity\": 4,\r\n  \"shipDate\": \"2024-01-24T09:57:19.577Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/store/order",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"store",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete place an order1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/store/order/1",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"store",
+								"order",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete place an order2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/store/order/2",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"store",
+								"order",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete place an order3",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/store/order/3",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"store",
+								"order",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete place an order4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/store/order/4",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"store",
+								"order",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Return to postman",
+			"item": [
+				{
+					"name": "https://petstore.swagger.io/v2/pet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"test02pet\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://petstore.swagger.io/v2/pet/222",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "api_key",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/1",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"changename01pet\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/1",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://petstore.swagger.io/v2/pet/222 Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "api_key",
+								"value": "12"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/pet/1",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"pet",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ReLearnCSVJSon",
+			"item": [
+				{
+					"name": "Get",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"{{email}}\",\r\n    \"password\": \"{{password}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/register",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SOAP",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <CountryCurrency xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\r\n            <sCountryISOCode>BY</sCountryISOCode>\r\n        </CountryCurrency>\r\n    </Body>\r\n</Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+							"protocol": "http",
+							"host": [
+								"webservices",
+								"oorsprong",
+								"org"
+							],
+							"path": [
+								"websamples.countryinfo",
+								"CountryInfoService.wso"
+							],
+							"query": [
+								{
+									"key": "WSDL",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Take Token",
+			"item": [
+				{
+					"name": "Take token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"cityslicka\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://reqres.in/api/register",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
